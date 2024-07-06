@@ -24,5 +24,6 @@ Create python virtual environment and download dependencies with the command:
 Training consists of over 600 images with respective classID and box coordinates
 
 ## Classification / Detection
+Uses box coordinates on images...
 
 ## Tests
