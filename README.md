@@ -17,7 +17,9 @@ Create python virtual environment and download dependencies with the command:
 
 ``` pip3 install -r requirements.txt```
 
-## Example Usage
+## Model Architecture
+- Image Classification + Regression Model:
+    produces 2 outputs for classifying the object and localizing it
 
 ## Training
 
