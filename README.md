@@ -1,8 +1,7 @@
 # carvision
+The purpose of carvision is to be able to detect an object (vehicles) in real-time. This project can be used to help 
 
-carvision is a an object detection system that uses OpenCV to detect vehicles in real-time.
-
-## Dataset
+## Datasets
 Vehicle detection dataset to detect cars, bikes, ambulances, trucks and motorcycles
 
 Data labels are given in a YOLOv8 format as such: 
@@ -11,11 +10,23 @@ Data labels are given in a YOLOv8 format as such:
 
 https://www.kaggle.com/datasets/alkanerturan/vehicledetection/data
 
+https://www.kaggle.com/datasets/yusufberksardoan/traffic-detection-project/data?select=valid
+
 ## Installation
 
 Create python virtual environment and download dependencies with the command:
 
 ``` pip3 install -r requirements.txt```
+
+# carvision 1.0
+Trained an object detection model with about 400 training images
+No data augmentation
+
+# carvision 2.0
+Trained a new object detection model with over 5000 images.
+Data augmentation and normalization prior to training
+
+
 
 ## Model Architecture
 - Image Classification + Regression Model:
@@ -32,5 +43,5 @@ Uses box coordinates on images...
 Tested Model on Normalized Testing Images with a 47% accuracy.
 
 # Bugs
-1. Model detects only cars when using openCV video capture
-2. Bounding Box coordinates only stay in the middle of the video capture window
+1. Model detects only one class
+2. Bounding Box coordinates have little to no change
